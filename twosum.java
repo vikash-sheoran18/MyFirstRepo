@@ -6,7 +6,7 @@ public class twosum {
         int[] result = solution.twoSum(nums, target);
         System.out.println("The indices of the two numbers are: [" + result[0] + ", " + result[1] + "]");
     }
-}
+    }   
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         int n = nums.length;
@@ -17,6 +17,6 @@ class Solution {
                 }
             }
         }
-        return new int[]{};
+        return new int[]{-1, -1}; // Return -1 if no solution is found
     }
 }
